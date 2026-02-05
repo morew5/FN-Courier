@@ -1,0 +1,13 @@
+<h2>Track Package</h2>
+
+<form method="POST">
+<input name="tracking" placeholder="Enter Tracking Number">
+<button>Track</button>
+</form>
+
+<% if(parcel){ %>
+<p>Sender: <%= parcel.sender %></p>
+<p>Receiver: <%= parcel.receiver %></p>
+<p>Status: <%= parcel.status %></p>
+<p>Amount: <%= parcel.amount %></p>
+<% } %>

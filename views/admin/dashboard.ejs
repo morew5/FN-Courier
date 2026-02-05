@@ -1,0 +1,14 @@
+<a href="/admin/add">Add Parcel</a>
+
+<table>
+<tr><th>Tracking</th><th>Sender</th><th>Receiver</th><th>Receipt</th></tr>
+
+<% rows.forEach(r=>{ %>
+<tr>
+<td><%= r.tracking %></td>
+<td><%= r.sender %></td>
+<td><%= r.receiver %></td>
+<td><a href="/admin/receipt/<%= r.id %>">Print</a></td>
+</tr>
+<% }) %>
+</table>
